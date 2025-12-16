@@ -1,0 +1,180 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
+
+:root {
+    --default-text-color: rgb(0, 0, 0);
+    --bg-color: rgb(248, 252, 232);
+    --default-font: "Roboto", sans-serif;
+}
+
+body {
+    background-color: var(--bg-color);
+    color: var(--default-text-color);
+    font-family: var(--default-font);
+    margin: 0;
+}
+
+h1 {
+    padding: 0;
+    margin: 0;
+    color: var(--bg-color);
+    background-color: black;
+}
+
+#root {
+    background-color: var(--bg-color);
+    color: var(--default-text-color);
+    display: flex;
+    justify-content: center;
+    padding: 25px;
+    gap: 60px;
+}
+
+p {
+    margin: 0;
+    padding: 0;
+}
+
+img {
+    width: 300px;
+}
+
+input,
+textarea {
+    border: 1px solid rgb(0, 0, 0);
+    background-color: var(--info-section-color);
+    color: var(--default-text-color);
+    font-family: var(--default-font);
+}
+
+textarea {
+    resize: none;
+}
+
+input {
+    height: 20px;
+}
+
+button {
+    background-color: var(--bg-color);
+    border: 1px solid;
+    font-family: var(--default-font);
+    cursor: pointer;
+    transition: all 0.25s ease-in;
+}
+
+button:hover {
+    background-color: var(--default-text-color);
+    color: var(--bg-color);
+}
+
+.info-forms {
+    border: 1px solid black;
+    background-color: var(--bg-color);
+    display: flex;
+    flex-direction: column;
+}
+
+.filler {
+    background-color: var(--default-text-color);
+    color: var(--bg-color);
+}
+
+.info-forms > * {
+    padding: 10px;
+    border-bottom: 1px solid black;
+    max-width: 300px;
+}
+
+.form-header {
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.general-info,
+.education-list,
+.experience-list,
+form,
+label {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.education-list-item,
+.experience-list-item {
+    border: 1px solid;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.list-item-buttons {
+    display: flex;
+    gap: 4px;
+}
+
+.curriculum {
+    padding: 35px;
+    border: 1px solid;
+    font-size: 14px;
+    background-color: var(--bg-color);
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 595px;
+}
+
+.section-header {
+    text-align: center;
+    font-weight: bold;
+}
+
+.general-cv-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-bottom: 1px solid;
+}
+
+.contact-info {
+    padding-bottom: 8px;
+    margin: 0;
+    display: flex;
+    gap: 25px;
+}
+
+.job-info,
+.education-info {
+    padding-bottom: 8px;
+}
+
+.education-info,
+.job-info {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    row-gap: 2px;
+}
+
+.education-info > p,
+.job-info > p {
+    line-height: 1.5;
+}
+
+.school-name,
+.job-name,
+.job-title,
+.full-name {
+    font-weight: bold;
+}
+
+.school-dates,
+.job-dates {
+    text-align: end;
+}
+
+.coursework,
+.job-description {
+    grid-column: 1/ 3;
+}
